@@ -1,4 +1,10 @@
 KotikHomepage::Application.routes.draw do
+  get "events/index"
+  get "events/internal"
+
+  match "/events/:id" => "events#show"
+  root to: "events#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
