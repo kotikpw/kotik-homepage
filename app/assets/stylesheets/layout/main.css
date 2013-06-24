@@ -1,0 +1,130 @@
+html {
+    background-color: #d7d0c6;
+    background-image: url(../img/layout/bg/main-gradient.png),
+                      url(../img/layout/bg/main-2.png),
+                      url(../img/layout/bg/main.png);
+
+    background-repeat: no-repeat, repeat-x, repeat;
+    background-position: center 99px, center 99px, center;
+}
+
+a {
+    color: #ee5a00;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #434343;
+}
+
+#main-header {
+    background: #1e1f1f; /* Old browsers */
+    background: -moz-linear-gradient(top, #1e1f1f 0%, #313132 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e1f1f), color-stop(100%,#313132)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #1e1f1f 0%,#313132 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #1e1f1f 0%,#313132 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #1e1f1f 0%,#313132 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #1e1f1f 0%,#313132 100%); /* W3C */
+
+    position: relative;
+    font-family: "Designosaur", sans-serif;
+    color: white;
+
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.5);
+}
+
+#header-content {
+    width: 934px;
+    height: 99px;
+    margin: auto;
+    position: relative;
+}
+
+#header-info {
+    display: inline-block;
+    position: relative;
+    padding-right: 1em;
+}
+
+#home {
+    text-decoration: none;
+}
+
+#logo {
+    background: url(../img/layout/logo.png) no-repeat;
+    width: 96px;
+    height: 96px;
+
+    overflow: hidden;
+    text-indent: 1000px;
+
+    position: absolute;
+    left: 100%;
+    top: 0;
+
+    -webkit-transform: rotate(0);
+    -webkit-transition: -webkit-transform 0.2s;
+    -moz-transform: rotate(0);
+    -moz-transition: -moz-transform 0.2s;
+    -o-transform: rotate(0);
+    -o-transition: -ms-transform 0.2s;
+    -ms-transform: rotate(0);
+    -ms-transition: -ms-transform 0.2s;
+    transform: rotate(0);
+    transition: transform 0.2s;
+}
+
+#logo:hover {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+h1 {
+    position: relative;
+    color: rgba(184, 184, 184, 0.52);
+    font-size: 2em;
+    text-shadow: 1px 1px 0 white;
+    font-weight: normal;
+    padding-top: 0.25em;
+}
+
+nav {
+    margin-top: 1em;
+    height: 2em;
+    float: left;
+}
+
+nav li {
+    float: left;
+    margin-right: 2em;
+}
+
+nav a,
+#lang-switch a {
+    color: #8c8a87;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+nav a:hover,
+#lang-switch a:hover,
+nav .active a {
+    color: #d7d0c6;
+}
+
+#lang-switch {
+    margin-top: 1em;
+    float: right;
+}
+
+footer {
+    font-family: "Trebuchet MS", "Trebuchet", "Helvetica", sans-serif;
+
+    color: #646464;
+    text-align: center;
+
+    margin-bottom: 0.5em;
+}
